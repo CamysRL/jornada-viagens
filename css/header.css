@@ -5,6 +5,7 @@ header {
   justify-content: space-between;
   align-items: flex-start;
   padding: 38px 48px;
+  position: relative;
 }
 
 .logo {
@@ -21,6 +22,7 @@ header {
     justify-content: center;
     align-items: center;    
     flex-direction: column;
+    /*margin-top: 24px;*/
 }
 
 .menu-container .menu {
@@ -35,4 +37,39 @@ nav {
 
 nav.ativo {
     display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: var(--background-tertiary-color);
 }
+
+.list-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+}
+
+.list-links li {
+    padding: 16px 30px;
+}
+
+.list-links li a {
+    text-decoration: none;
+    color: var(--text-secondary-color);
+    font-size: 18px;
+    font-weight: var(--menu-weight);
+}
+
+.list-links li:hover {
+    background-color: var(--background-primary-color);
+}
+
+.list-links li:hover a {
+    color: var(--text-primary-color);
+}
+
