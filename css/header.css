@@ -3,7 +3,7 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 38px 48px;
   position: relative;
 }
@@ -21,8 +21,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;*/
-  margin-top: 24px;
+  flex-direction: column;
+  margin-top: 24px;*/
 }
 
 .menu-container .menu {
@@ -84,14 +84,19 @@ nav.ativo {
     display: none;
   }
 
-  nav {
+  .menu-container nav {
     display: block;
+    position: inherit;
   }
 
   .list-links {
-    list-style: none;
     flex-direction: row;
     justify-content: flex-end;
+    padding-bottom: 0;
+  }
+
+  .list-links li {
+    padding: 0 25px;
   }
 
   .list-links li:hover {
